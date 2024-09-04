@@ -1,5 +1,7 @@
 import datetime
-usuario_logado = True
+
+morador_logado = True
+admin_logado = True
 
 data_hoje = datetime.date.today()
 
@@ -11,20 +13,27 @@ usuarios_moradores = {
       "id_app": 123,
       "senha": 123456,
       "email": "teste@gmail.com",
-      "conta": 123456101
+      "conta_condominio": 123456101
    },
    "user2": {
       "id_app": 456,
       "senha": 654321,
       "email": "teste@gmail.com",
-      "conta": 123456201
+      "conta_condominio": 123456201
    },
    "user3": {
       "id_app": 789,
       "senha": 999111,
       "email": "teste@gmail.com",
-      "conta": 123456301
+      "conta_condominio": 123456301
    },
+}
+
+usuario_admin = {
+   "admin": {
+      "id_admin": 123,
+      "senha": 321321,
+   }
 }
 
 produtos = {
@@ -44,7 +53,7 @@ produtos = {
         "preco": 25.0,
         "id": 333,
         "qtd_disponivel": 10,
-        "data_validade": data_hoje
+        "data_validade": data_passada
     },
     "toddynho": {
         "preco": 2.70,
@@ -65,3 +74,5 @@ historico_compras = []
 ids_gerados = set()
 
 senha_gerada = set()
+
+temperatura = -4
